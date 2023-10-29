@@ -5,39 +5,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04e0c1bd-b019-4407-bada-226c51627885" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/configs/ApplicationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/converters/EmployeeStatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/converters/ObjectMapperContextResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/enums/EmployeeStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/enums/ProductStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/ProductImage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/ProductPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/MySessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/EmployeeResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/ProductResources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/beans.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/debai.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/result/dnnh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/cors/CorsFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/cors/CorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/cors/CorsHeaders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/dtos/OrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/dtos/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/OrderDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/ProductImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/ProductPriceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/CustomerResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/OrderDetailResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/OrderResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/ProductImageResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/ProductPriceResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/response/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/ProductImageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/ProductPriceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/impl/ProductImageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/impl/ProductPriceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/impl/ProductServiceIplm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/ws/ProductWebSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/configs/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/configs/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/ProductImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/ProductImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/ProductPrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/models/ProductPrice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/repositories/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/EmployeeResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/EmployeeResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/ProductResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/resources/ProductResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/week2_lab2/services/EmployeeService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,23 +82,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="week2_lab2" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="week2_lab2" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="week2_lab2" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -81,12 +93,27 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Tuan2110&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="6f4fd00e-60b6-4692-8b64-2c2965345c30" />
+        <option name="url" value="https://github.com/Tuan2110/week02_lab2_DoQuocTuan_20079191.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -95,6 +122,12 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2VZrXlqiFElQ9XvFUDvcPqXvgm1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -110,17 +143,35 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Data/HK7/LapTrinhWWW/Code/week01_lab1_DoQuocTuan_20079191&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Data/HK7/LapTrinhWWW/Code/OnTap&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.week2_lab2.services" />
       <recent name="com.example.week2_lab2.models" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Data\HK7\LapTrinhWWW\Code\week2_lab2\src\main\java\com\example\week2_lab2\response" />
+      <recent name="E:\Data\HK7\LapTrinhWWW\Code\week2_lab2\src\main\java\com\example\week2_lab2\cors" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Data\HK7\LapTrinhWWW\Code\week2_lab2\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.week2_lab2.ws" />
+      <recent name="com.example.week2_lab2.resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.8">
@@ -150,12 +201,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployeeStatusConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.week2_lab2.converters.EmployeeStatusConverter" />
+    <configuration name="OrderRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.week2_lab2.repositories.OrderRepository" />
       <module name="week2_lab2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.week2_lab2.converters.*" />
+          <option name="PATTERN" value="com.example.week2_lab2.repositories.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,12 +214,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySessionFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.week2_lab2.repositories.MySessionFactory" />
+    <configuration name="OrderResources" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.week2_lab2.resources.OrderResources" />
       <module name="week2_lab2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.week2_lab2.enums.*" />
+          <option name="PATTERN" value="com.example.week2_lab2.resources.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,12 +227,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObjectMapperContextResolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.week2_lab2.converters.ObjectMapperContextResolver" />
+    <configuration name="OrderServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.week2_lab2.services.impl.OrderServiceImpl" />
       <module name="week2_lab2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.week2_lab2.converters.*" />
+          <option name="PATTERN" value="com.example.week2_lab2.services.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -277,20 +328,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.OrderServiceImpl" />
+      <item itemvalue="Application.OrderResources" />
+      <item itemvalue="Application.OrderRepository" />
       <item itemvalue="Application.B" />
       <item itemvalue="Application.EmployeeRepository" />
-      <item itemvalue="Application.EmployeeStatusConverter" />
-      <item itemvalue="Application.MySessionFactory" />
-      <item itemvalue="Application.ObjectMapperContextResolver" />
       <item itemvalue="Tomcat Server.Tomcat 10.1.8" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrderServiceImpl" />
+        <item itemvalue="Application.OrderResources" />
+        <item itemvalue="Application.OrderRepository" />
         <item itemvalue="Application.B" />
         <item itemvalue="Application.EmployeeRepository" />
-        <item itemvalue="Application.ObjectMapperContextResolver" />
-        <item itemvalue="Application.EmployeeStatusConverter" />
-        <item itemvalue="Application.MySessionFactory" />
       </list>
     </recent_temporary>
   </component>
@@ -319,10 +370,37 @@
       <workItem from="1695696780439" duration="2249000" />
       <workItem from="1695900355051" duration="178000" />
       <workItem from="1695955210432" duration="3438000" />
+      <workItem from="1696163337741" duration="478000" />
+      <workItem from="1697214326706" duration="439000" />
+      <workItem from="1697357739636" duration="1364000" />
+      <workItem from="1697378411948" duration="2707000" />
+      <workItem from="1697421858196" duration="9161000" />
+      <workItem from="1697470995354" duration="1254000" />
+      <workItem from="1697511190504" duration="7757000" />
+      <workItem from="1697816955364" duration="715000" />
+      <workItem from="1697855052805" duration="449000" />
+      <workItem from="1697882421296" duration="55000" />
+      <workItem from="1698081171866" duration="5273000" />
+      <workItem from="1698116476171" duration="15055000" />
+      <workItem from="1698215776374" duration="362000" />
+      <workItem from="1698221792539" duration="12501000" />
+      <workItem from="1698297426192" duration="9025000" />
+      <workItem from="1698322582781" duration="331000" />
+      <workItem from="1698337208434" duration="769000" />
+      <workItem from="1698378958331" duration="2604000" />
+      <workItem from="1698393417960" duration="232000" />
+      <workItem from="1698487515816" duration="49000" />
+      <workItem from="1698489125211" duration="3114000" />
+      <workItem from="1698507092485" duration="4698000" />
+      <workItem from="1698548081779" duration="16853000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

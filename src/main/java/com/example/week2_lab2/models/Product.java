@@ -1,12 +1,18 @@
 package com.example.week2_lab2.models;
 
 import com.example.week2_lab2.enums.ProductStatus;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
+import java.util.Objects;
 
 @Entity
 @Table(name = "product")
+@org.hibernate.annotations.NamedQueries({
+        @org.hibernate.annotations.NamedQuery(name = "Product.getAllProduct", query = "from Product where status = :status")
+})
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,11 +28,12 @@ public class Product {
     private String manufacturer;
     @Column(nullable = false,length = 11)
     private ProductStatus status;
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "product")
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "product")
+    @JsonIgnore
     private List<OrderDetail> orderDetails;
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "product")
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "product")
     private List<ProductImage> productImages;
-    @OneToMany(fetch = FetchType.LAZY,mappedBy = "product")
+    @OneToMany(fetch = FetchType.EAGER,mappedBy = "product")
     private List<ProductPrice> productPrices;
 
     public Product() {
@@ -46,6 +53,10 @@ public class Product {
         this.unit = unit;
         this.manufacturer = manufacturer;
         this.status = status;
+    }
+
+    public Product(long id) {
+        this.id = id;
     }
 
     public long getId() {

@@ -1,20 +1,26 @@
 package com.example.week2_lab2.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
 @Table(name = "product_price")
+@NamedQueries({
+        @NamedQuery(name = "ProductPrice.getByProductId",query = "from ProductPrice where product.id = :id")
+})
 public class ProductPrice {
     @Id
     @ManyToOne
     @JoinColumn(name = "product_id")
+    @JsonIgnore
     private Product product;
     @Id
     @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd")
@@ -23,6 +29,13 @@ public class ProductPrice {
     @Column(nullable = false)
     private double price;
     private String note;
+
+    public ProductPrice(Product product, double price, String note) {
+        this.product = product;
+        this.priceDateTime = LocalDate.now();
+        this.price = price;
+        this.note = note;
+    }
 
     public ProductPrice(Product product, LocalDate priceDateTime, double price, String note) {
         this.product = product;

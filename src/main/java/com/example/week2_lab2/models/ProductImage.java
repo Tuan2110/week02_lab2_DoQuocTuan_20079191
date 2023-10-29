@@ -1,15 +1,20 @@
 package com.example.week2_lab2.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
 @Table(name = "product_image")
+@org.hibernate.annotations.NamedQueries({
+        @org.hibernate.annotations.NamedQuery(name = "ProductImage.getAllProductImage", query = "from ProductImage")
+})
 public class ProductImage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "image_id",length = 20)
     private long id;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JsonBackReference
     @JoinColumn(name = "product_id")
     private Product product;
     @Column(nullable = false)

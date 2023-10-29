@@ -14,8 +14,8 @@ ext {
   junitVersion = '5.9.2'
 }
 
-sourceCompatibility = '11'
-targetCompatibility = '11'
+sourceCompatibility = "16"
+targetCompatibility = "16"
 
 tasks.withType(JavaCompile) {
   options.encoding = 'UTF-8'
@@ -44,6 +44,8 @@ dependencies {
   //for convert type in rest
   implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2'
 
+  // for gson
+    implementation 'com.google.code.gson:gson:2.8.9'
   testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }

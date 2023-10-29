@@ -2,9 +2,11 @@ package com.example.week2_lab2.repositories;
 
 import com.example.week2_lab2.enums.EmployeeStatus;
 import com.example.week2_lab2.models.Employee;
+import jakarta.persistence.NoResultException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.internal.build.AllowSysOut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -74,14 +76,30 @@ public class EmployeeRepository {
         return null;
     }
 
-
-    public static void main(String[] args) {
-        EmployeeRepository employeeRepository = new EmployeeRepository();
-//        Employee employee = new Employee("Tuan", LocalDateTime.now(), "abc3@gmail.com", "033904904", "Ha Noi", EmployeeStatus.ACTIVE);
-//        employeeRepository.insertEmp(employee);
-//        Employee employee = employeeRepository.findById(1).get();
-//        employeeRepository.setStatus(employee, EmployeeStatus.TERMINATED);
-//        employeeRepository.updateEmp(employee);
-        employeeRepository.getAllEmp().forEach(System.out::println);
+    public Optional<Employee> finByEmailAndPassword(String email, String password) {
+        Transaction transaction = null;
+        Employee employee = null;
+        try(Session session = sessionFactory.openSession()){
+            transaction = session.beginTransaction();
+            employee = session
+                    .createNamedQuery("Employee.findByEmailAndPassword",Employee.class)
+                    .setParameter("email", email)
+                    .setParameter("password", password)
+                    .getSingleResult();
+            transaction.commit();
+            return Optional.ofNullable(employee);
+        } catch (NoResultException noResultException){
+            return Optional.empty();
+        } catch (Exception e){
+            logger.error(e.getMessage());
+            transaction.rollback();
+        }
+        return Optional.empty();
     }
+
+//    public static void main(String[] args) {
+//        EmployeeRepository employeeRepository = new EmployeeRepository();
+//        Employee employee = employeeRepository.finByEmailAndPassword("a@gmail.co","123").get();
+//        System.out.println(employee);
+//    }
 }

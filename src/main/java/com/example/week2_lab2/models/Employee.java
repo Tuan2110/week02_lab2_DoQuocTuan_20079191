@@ -3,19 +3,19 @@ package com.example.week2_lab2.models;
 import com.example.week2_lab2.enums.EmployeeStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "employee")
 @org.hibernate.annotations.NamedQueries({
-        @org.hibernate.annotations.NamedQuery(name = "Employee.getAllEmp", query = "from Employee where status = :status")
+        @org.hibernate.annotations.NamedQuery(name = "Employee.getAllEmp", query = "from Employee where status = :status"),
+        @org.hibernate.annotations.NamedQuery(name = "Employee.findByEmailAndPassword", query = "from Employee where email = :email and password = :password")
 })
 public class Employee {
     @Id
@@ -34,6 +34,8 @@ public class Employee {
     private String phone;
     @Column(nullable = false,length = 250)
     private String address;
+    @Column(nullable = false)
+    private String password;
     @Column(nullable = false,length = 11)
     private EmployeeStatus status;
     @OneToMany(mappedBy = "employee",fetch = FetchType.EAGER)
@@ -43,22 +45,27 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(long id, String fullName, LocalDate dob, String email, String phone, String address, EmployeeStatus status) {
+    public Employee(long id) {
+        this.id = id;
+    }
+
+    public Employee(long id, String fullName, LocalDate dob, String email, String phone, String address, String password, EmployeeStatus status) {
         this.id = id;
         this.fullName = fullName;
         this.dob = dob;
         this.email = email;
         this.phone = phone;
         this.address = address;
+        this.password = password;
         this.status = status;
     }
-
-    public Employee(String fullName, LocalDate dob, String email, String phone, String address, EmployeeStatus status) {
+    public Employee( String fullName, LocalDate dob, String email, String phone, String address, String password, EmployeeStatus status) {
         this.fullName = fullName;
         this.dob = dob;
         this.email = email;
         this.phone = phone;
         this.address = address;
+        this.password = password;
         this.status = status;
     }
 
@@ -124,6 +131,14 @@ public class Employee {
 
     public void setStatus(EmployeeStatus status) {
         this.status = status;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
