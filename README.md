@@ -21,6 +21,7 @@ chỉnh số lượng sản phẩm trong giỏ hàng
   <img src="result/dnnh.png"/>
 - Thanh toán thành công sẽ lưu order và chuyển về trang chủ
   <img src="result/4.png"/>
+  <br>
   <b>2.Quản lý sản phẩm</b>
 - Danh sách sản phẩm
   <img src="result/5.png"/>
