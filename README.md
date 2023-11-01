@@ -21,6 +21,8 @@ chỉnh số lượng sản phẩm trong giỏ hàng
   <img src="result/dnnh.png"/>
 - Thanh toán thành công sẽ lưu order và chuyển về trang chủ
   <img src="result/4.png"/>
+- Vô lịch sử giao dịch của paypal đã có
+  <img src="result/ls.png"/>
   <br>
   <b>2.Quản lý sản phẩm</b>
 - Danh sách sản phẩm
