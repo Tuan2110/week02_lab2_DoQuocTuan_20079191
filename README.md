@@ -1,6 +1,6 @@
 ## Giới thiệu:
 - Môn học: Lập trình WWW (Java)
-- Chủ đề: Bài tập tuần 01
+- Chủ đề: Bài tập tuần 02
   <br />
 
 ## Đề bài:
